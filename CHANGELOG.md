@@ -1,3 +1,9 @@
+## [0.4.1] - 2026-06-15
+
+### Bug Fixes
+- use SECTION variable directly for GitHub Release notes ([ab3e9f9](https://github.com/zfadhli/base-ts/commit/ab3e9f9))
+
+
 ## [0.4.0] - 2026-06-15
 
 ### Features
