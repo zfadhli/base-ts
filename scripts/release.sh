@@ -157,15 +157,8 @@ info "committed and pushed"
 
 # ─── create GitHub Release ──────────────────────────────────────────────────
 
-awk "/^## \\[${NEW_VERSION}\\]/,0" CHANGELOG.md \
-  | awk '!/^## \\[/{print} /^## \\[/{if(NR>1) exit}' \
-  > "/tmp/release-notes-${TAG}.md" 2>/dev/null || true
-
-if [ -s "/tmp/release-notes-${TAG}.md" ]; then
-  gh release create "$TAG" --notes-file "/tmp/release-notes-${TAG}.md"
-else
-  gh release create "$TAG" --generate-notes
-fi
+echo "$SECTION" > "/tmp/release-notes-${TAG}.md"
+gh release create "$TAG" --notes-file "/tmp/release-notes-${TAG}.md"
 rm -f "/tmp/release-notes-${TAG}.md"
 
 info "GitHub Release created: ${TAG}"
