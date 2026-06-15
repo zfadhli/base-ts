@@ -16,6 +16,14 @@ A production-ready TypeScript library starter template.
 
 ## Getting started
 
+### Rename the package and set public
+
+Before publishing, you'll also need to set `"private": false` in `package.json`:
+
+```diff
++ "private": false,
+```
+
 ### Rename the package
 
 Update `package.json`:
