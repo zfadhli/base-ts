@@ -22,7 +22,5 @@ Thumbs.db
 # Lefthook
 .lefthook/
 
-# Changesets - config is tracked, changelog entries are committed alongside code
-
 # Plan output
 tmp/
