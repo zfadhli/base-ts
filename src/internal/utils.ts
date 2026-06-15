@@ -42,3 +42,11 @@ export function sum(a: number, b: number): number {
 export function multiply(a: number, b: number): number {
   return a * b
 }
+
+/**
+ * Returns the difference of two numbers.
+ * @internal
+ */
+export function subtract(a: number, b: number): number {
+  return a - b
+}

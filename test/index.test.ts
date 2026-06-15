@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test"
-import { greet, range, sum } from "../src/index.ts"
+import { greet, range, subtract, sum } from "../src/index.ts"
 
 describe("greet", () => {
   it("should return a greeting for a given name", () => {
@@ -28,5 +28,15 @@ describe("sum", () => {
 
   it("should handle negatives", () => {
     expect(sum(-1, 1)).toBe(0)
+  })
+})
+
+describe("subtract", () => {
+  it("should subtract two numbers", () => {
+    expect(subtract(5, 3)).toBe(2)
+  })
+
+  it("should handle negatives", () => {
+    expect(subtract(1, -1)).toBe(2)
   })
 })
