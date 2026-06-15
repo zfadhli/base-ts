@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test"
-import { capitalize, greet, range, sum } from "../src/index.ts"
+import { greet, range, sum } from "../src/index.ts"
 
 describe("greet", () => {
   it("should return a greeting for a given name", () => {
@@ -8,20 +8,6 @@ describe("greet", () => {
 
   it("should handle empty string", () => {
     expect(greet("")).toBe("Hello, !")
-  })
-})
-
-describe("capitalize", () => {
-  it("should capitalize the first letter", () => {
-    expect(capitalize("hello")).toBe("Hello")
-  })
-
-  it("should handle single character", () => {
-    expect(capitalize("a")).toBe("A")
-  })
-
-  it("should handle empty string", () => {
-    expect(capitalize("")).toBe("")
   })
 })
 

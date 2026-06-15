@@ -5,4 +5,4 @@
  * Keep internal implementation details in `src/internal/`.
  */
 
-export { capitalize, greet, range, sum } from "./internal/utils.ts"
+export { greet, range, sum } from "./internal/utils.ts"
