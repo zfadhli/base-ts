@@ -15,11 +15,12 @@
     "outDir": "dist",
     "declarationDir": "dist",
     "skipLibCheck": true,
+    "types": ["bun-types"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
     "allowImportingTsExtensions": true
   },
-  "include": ["src"],
-  "exclude": ["dist", "node_modules", "test"]
+  "include": ["src", "test"],
+  "exclude": ["dist", "node_modules"]
 }
