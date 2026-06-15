@@ -1,3 +1,10 @@
+## [0.3.1] - 2026-06-15
+
+### Other Changes
+- remove processed plan file ([3758d2b](https://github.com/zfadhli/base-ts/commit/3758d2b))
+- replace changesets with custom release script ([97b5abe](https://github.com/zfadhli/base-ts/commit/97b5abe))
+
+
 # @zfadhli/base-ts
 
 ## 0.3.0
