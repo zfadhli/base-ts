@@ -7,6 +7,7 @@ pre-commit:
     lint:
       glob: "*.{ts,tsx,js,jsx,json,jsonc}"
       run: bunx biome check --staged --write --unsafe --no-errors-on-unmatched {staged_files} && git update-index --again
+      stage_fixed: true
     typecheck:
       glob: "*.{ts,tsx}"
       run: bun run typecheck --noEmit
