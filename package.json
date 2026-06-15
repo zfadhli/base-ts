@@ -36,9 +36,9 @@
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",
     "@changesets/cli": "^2.29.0",
-    "lefthook": "^1.11.0",
+    "lefthook": "^2.1.9",
     "tsdown": "^0.22.2",
-    "typescript": "^5.8.0"
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": ">=18"
