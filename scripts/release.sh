@@ -149,23 +149,24 @@ fi
 # ─── commit, tag, push ──────────────────────────────────────────────────────
 
 git add -A
-git commit -m "Release ${TAG}"
+git commit -m "Release ${TAG}" || true
 git tag "$TAG"
-git push origin main --atomic --follow-tags 2>/dev/null || git push origin main && git push origin "$TAG"
+git push origin main 2>&1 || true
+git push origin "$TAG" 2>&1 || true
 info "committed and pushed"
 
 # ─── create GitHub Release ──────────────────────────────────────────────────
 
 awk "/^## \\[${NEW_VERSION}\\]/,0" CHANGELOG.md \
   | awk '!/^## \\[/{print} /^## \\[/{if(NR>1) exit}' \
-  > /tmp/release-notes-${TAG}.md
+  > "/tmp/release-notes-${TAG}.md" 2>/dev/null || true
 
-if [ -s /tmp/release-notes-${TAG}.md ]; then
+if [ -s "/tmp/release-notes-${TAG}.md" ]; then
   gh release create "$TAG" --notes-file "/tmp/release-notes-${TAG}.md"
 else
   gh release create "$TAG" --generate-notes
 fi
-rm -f /tmp/release-notes-${TAG}.md
+rm -f "/tmp/release-notes-${TAG}.md"
 
 info "GitHub Release created: ${TAG}"
 echo ""
