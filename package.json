@@ -1,7 +1,7 @@
 {
   "name": "@zfadhli/base-ts",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "A TypeScript library starter template",
   "license": "MIT",
