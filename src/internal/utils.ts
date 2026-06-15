@@ -34,3 +34,11 @@ export function range(end: number): number[] {
 export function sum(a: number, b: number): number {
   return a + b
 }
+
+/**
+ * Multiplies two numbers.
+ * @internal
+ */
+export function multiply(a: number, b: number): number {
+  return a * b
+}
