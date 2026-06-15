@@ -6,11 +6,11 @@ pre-commit:
   commands:
     lint:
       glob: "*.{ts,tsx,js,jsx,json,jsonc}"
-      run: bunx biome check --staged --write --unsafe --no-errors-on-unmatched {staged_files} && git update-index --again
+      run: bunx biome check --staged --write --unsafe --no-errors-on-unmatched {staged_files}
       stage_fixed: true
     typecheck:
       glob: "*.{ts,tsx}"
-      run: bun run typecheck --noEmit
+      run: bun run typecheck
 
 pre-push:
   commands:
