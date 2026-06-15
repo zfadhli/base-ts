@@ -1,3 +1,9 @@
+## [0.3.2] - 2026-06-15
+
+### Bug Fixes
+- release script push steps exiting before gh release ([12f889b](https://github.com/zfadhli/base-ts/commit/12f889b))
+
+
 ## [0.3.1] - 2026-06-15
 
 ### Other Changes
