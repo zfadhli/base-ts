@@ -22,9 +22,7 @@ Thumbs.db
 # Lefthook
 .lefthook/
 
-# Changesets - track config only, not changelog entries
-.changeset/*.md
-!/.changeset/config.json
+# Changesets - config is tracked, changelog entries are committed alongside code
 
 # Plan output
 tmp/
