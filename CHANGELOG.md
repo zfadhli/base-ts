@@ -1,4 +1,4 @@
-# @base-ts/core
+# @zfadhli/base-ts
 
 ## 0.0.1
 

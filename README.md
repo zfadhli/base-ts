@@ -1,4 +1,4 @@
-# @base-ts/core
+# @zfadhli/base-ts
 
 A production-ready TypeScript library starter template.
 
@@ -21,7 +21,7 @@ A production-ready TypeScript library starter template.
 Update `package.json`:
 
 ```diff
-- "name": "@base-ts/core",
+- "name": "@zfadhli/base-ts",
 + "name": "@your-scope/your-library",
 ```
 
