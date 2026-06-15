@@ -83,6 +83,21 @@ describe("greet", () => {
 
 ## Code Style Guidelines
 
+### API Design
+- **Prefer function-based Composition API over classes** — pure functions, composable utilities, no class wrappers
+- **Minimal API surface** — expose only what's needed. Re-export from `src/index.ts`, keep internals in `src/internal/`
+- **Progressive complexity** — simple by default, powerful when needed. Start with a plain function, add options/config later
+
+### Code Style
+- **Clean, readable, pragmatic** — avoid cleverness
+- **Strong TypeScript, strict mode**
+- **Good error messages and dev experience**
+
+### Structure
+- **Modular over monolithic** — prefer `lib/` with focused files over a single `utils.ts`
+- **ESM-first, flat hierarchy when possible**
+- **Convention over configuration**
+
 ### Biome (lint + format)
 
 Configuration in `biome.json`. Key rules:
