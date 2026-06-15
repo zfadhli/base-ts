@@ -1,0 +1,19 @@
+# lefthook.yml — git hooks managed by lefthook
+# Refer for documentation: https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: "*.{ts,tsx,js,jsx,json,jsonc}"
+      run: bunx biome check --staged --no-errors-on-unmatched {staged_files}
+    typecheck:
+      glob: "*.{ts,tsx}"
+      run: bun run typecheck --noEmit
+
+pre-push:
+  commands:
+    test:
+      run: bun test
+    build:
+      run: bun run build
