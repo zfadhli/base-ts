@@ -7,5 +7,5 @@
  * @internal
  */
 export function greet(name: string): string {
-  return `Hello, ${name}!`
+  return "Hello, " + name + "!"
 }
