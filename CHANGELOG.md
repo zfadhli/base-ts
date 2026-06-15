@@ -1,3 +1,9 @@
+## [0.4.0] - 2026-06-15
+
+### Features
+- add subtract utility function ([8cd5302](https://github.com/zfadhli/base-ts/commit/8cd5302))
+
+
 ## [0.3.2] - 2026-06-15
 
 ### Bug Fixes
