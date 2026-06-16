@@ -1,3 +1,9 @@
+## [0.4.2] - 2026-06-16
+
+### Other Changes
+- remove stale release workflow (was using changesets/action@v1) ([da1881f](https://github.com/zfadhli/base-ts/commit/da1881f))
+
+
 ## [0.4.1] - 2026-06-15
 
 ### Bug Fixes
