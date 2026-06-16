@@ -1,5 +1,4 @@
-# lefthook.yml — git hooks managed by lefthook
-# Refer for documentation: https://github.com/evilmartians/lefthook
+# yaml-language-server: $schema=https://json.schemastore.org/lefthook.json
 
 pre-commit:
   parallel: true
