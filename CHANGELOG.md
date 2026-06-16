@@ -1,3 +1,9 @@
+## [0.4.3] - 2026-06-16
+
+### Other Changes
+- organize tsconfig.json with grouped sections and comments ([f657f7d](https://github.com/zfadhli/base-ts/commit/f657f7d))
+
+
 ## [0.4.2] - 2026-06-16
 
 ### Other Changes
